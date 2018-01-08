@@ -2,15 +2,14 @@ package money;
 
 public class Doller {
 
-	int amount = 10;
+	int amount;
 
-	public Doller(int amount) {
-
+	Doller(int amount) {
+        this.amount = amount;
 	}
 
-	public void times(int multiplier) {
-
-
+	Doller times(int multiplier) {
+        return new Doller(amount * multiplier);
 	}
 
 }
